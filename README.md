@@ -1,10 +1,8 @@
 # 조남준 &nbsp;|&nbsp; 백엔드 개발자
 
-
 [![Email](https://img.shields.io/badge/Email-jonamjun.dev%40gmail.com-blue?style=for-the-badge&logo=gmail)](mailto:jonamjun.dev@gmail.com)
 [![Phone](https://img.shields.io/badge/Phone-%2B821051264634-green?style=for-the-badge&logo=whatsapp)](tel:+821051264634)
 [![GitHub](https://img.shields.io/badge/GitHub-IDontHaveBrain-181717?style=for-the-badge&logo=github)](https://github.com/IDontHaveBrain)
-
 
 <p><i>💡 복잡한 기술적 문제 해결과 시스템 설계에 열정을 가진 백엔드 개발자 💡</i></p>
 
