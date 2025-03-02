@@ -103,296 +103,275 @@
 **기술개발팀 백엔드파트** | *2024.09 - 현재 재직중*  
 **팀 구성:** 백엔드 6명, DevOps 2명, 프론트엔드 3명, 앱 4명
 
-<div style="border-left: 4px solid #4CAF50; padding-left: 15px; margin-bottom: 20px;">
-<h4>🚀 서버 메모리 개선 (2024.11)</h4>
-
-<table style="margin-bottom: 15px;">
-  <tr>
-    <td align="center"><h3>📊 30%</h3><small>누적 메모리 사용량 감소</small></td>
-    <td align="center"><h3>📊 20%</h3><small>피크타임 메모리 사용량 감소</small></td>
-    <td align="center"><h3>📊 40%</h3><small>API 응답시간 개선</small></td>
-  </tr>
-</table>
-
-<b>주요 역할 및 해결 과제:</b>
-<ul>
-<li><b>성능 병목 분석:</b> Datadog을 활용하여 응답 시간이 5초 이상 지연되는 API 패턴 분석 및 메모리 사용량 상관관계 발견</li>
-<li><b>문제 식별 및 해결:</b> 특정 Annotation을 조건으로 빈번하게 수행되는 AOP 로직에서 InputStream 사용 후 close 처리 누락을 확인</li>
-<li><b>리팩토링 주도:</b> try-with-resources 구문으로 close 처리 자동화 리팩토링 구현 및 적용</li>
-<li><b>사용자 경험 개선:</b> 응답 시간 개선으로 앱 사용성 향상 및 사용자 만족도 증가에 기여</li>
-</ul>
-</div>
+> ### 🚀 서버 메모리 개선 (2024.11)
+>
+> <table style="margin-bottom: 15px;">
+>   <tr>
+>     <td align="center"><h3>📊 30%</h3><small>누적 메모리 사용량 감소</small></td>
+>     <td align="center"><h3>📊 20%</h3><small>피크타임 메모리 사용량 감소</small></td>
+>     <td align="center"><h3>📊 40%</h3><small>API 응답시간 개선</small></td>
+>   </tr>
+> </table>
+>
+> **주요 역할 및 해결 과제:**
+> - **성능 병목 분석:** Datadog을 활용하여 응답 시간이 5초 이상 지연되는 API 패턴 분석 및 메모리 사용량 상관관계 발견
+> - **문제 식별 및 해결:** 특정 Annotation을 조건으로 빈번하게 수행되는 AOP 로직에서 InputStream 사용 후 close 처리 누락을 확인
+> - **리팩토링 주도:** try-with-resources 구문으로 close 처리 자동화 리팩토링 구현 및 적용
+> - **사용자 경험 개선:** 응답 시간 개선으로 앱 사용성 향상 및 사용자 만족도 증가에 기여
 
 ---
 
 ### 🏢 에스큐아이소프트(주)
 *2022.10 - 2024.09*
 
-<div style="border-left: 4px solid #2196F3; padding-left: 15px; margin-bottom: 20px;">
-<h4>🚀 Eliga Order(B2B 카페, 식당 키오스크 솔루션) 차세대 (2024.03 - 2024.09)</h4>
-<p><code>Java</code> <code>Spring Boot</code> <code>PostgreSQL</code> <code>Docker</code> <code>K8S</code> <code>Redis</code><br>
-<b>팀 구성:</b> 백엔드 4명, 데이터 마이그레이션 1명, 프론트 3명, 앱 3명</p>
+> ### 🚀 Eliga Order(B2B 카페, 식당 키오스크 솔루션) 차세대 (2024.03 - 2024.09)
+> `Java` `Spring Boot` `PostgreSQL` `Docker` `K8S` `Redis`  
+> **팀 구성:** 백엔드 4명, 데이터 마이그레이션 1명, 프론트 3명, 앱 3명
+>
+> **핵심 성과:**
+> - 🏗️ 서버리스/NoSQL 기반 레거시에서 현대적 아키텍처로 재설계
+> - 🔄 멀티테넌시 아키텍처 도입으로 고객별 독립 배포 환경 구축
+> - ⚙️ Github Action, Jenkins, Docker, K8S 기반 CI/CD 파이프라인 구축
+>
+> <details style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f8f8f8;">
+> <summary style="cursor: pointer; font-weight: bold; color: #0366d6;"><b>💡 주요 역할 및 도전 과제 (클릭하여 펼치기)</b></summary>
+> <div style="margin-top: 10px; padding-left: 15px; border-left: 3px solid #0366d6;">
+> <p style="margin-bottom: 12px;"><b style="color: #333;">🏗️ 아키텍처 설계 주도:</b> 주니어지만 시스템 아키텍처 설계를 적극적으로 주도하고 기술 스택 의사결정 과정을 이끔</p>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">🔍 레거시 시스템 문제점 식별:</b></p>
+> <ul>
+> <li>Node.js, Express, AWS Lambda, DynamoDB 기반 시스템의 유지보수 어려움 분석</li>
+> <li>로깅 시스템 미흡으로 인한 문제 추적 한계 발견</li>
+> <li>설계 없이 급하게 개발된 데이터 구조의 복잡성 파악</li>
+> </ul>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">⚙️ 기술 스택 선택 및 이유:</b></p>
+> <ul>
+> <li><b>Java & Spring Boot:</b> 풍부한 생태계와 개발자 수급 용이성, 견고한 엔터프라이즈 기능 지원을 위해 선택</li>
+> <li><b>PostgreSQL:</b> NoSQL에서 RDB로 전환하여 데이터 무결성 강화 및 개발자 친화적 환경 제공</li>
+> <li><b>Docker:</b> 환경 일관성 보장 및 12시간 이내 On-premise 배포 요구사항 충족 가능성</li>
+> <li><b>Kubernetes:</b> 서비스 이중화, 무중단 배포, 멀티테넌시 지원, 중앙집중식 로깅 환경 구축을 위해 도입</li>
+> <li><b>Redis:</b> 세션 관리 및 캐싱으로 NoSQL→RDB 전환 과정에서의 성능 최적화를 위해 활용</li>
+> <li><b>NCloud:</b> AWS 대비 비용 효율성과 국내 서비스 특성상 지원 용이성 고려</li>
+> </ul>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">📝 설계 및 구현:</b></p>
+> <ul>
+> <li>ERD 설계부터 전체 시스템 아키텍처 구성까지 전 과정 주도적 참여</li>
+> <li>멀티테넌시 아키텍처 설계로 고객사별 독립 환경 제공하는 시스템 구축</li>
+> <li>Docker 컨테이너화 및 K8S 배포 파이프라인 설계 및 구현</li>
+> <li>중앙화된 로깅 시스템 구축으로 문제 추적 용이성 확보</li>
+> </ul>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">🚀 기술적 도전 및 성장:</b></p>
+> <ul>
+> <li>서버리스에서 컨테이너 기반 아키텍처로 전환 경험</li>
+> <li>분산 시스템 설계 원칙과 멀티테넌시 아키텍처 구현 역량 습득</li>
+> <li>주니어 개발자로서 전체 아키텍처 설계 경험을 통한 기술적 시야 확장</li>
+> </ul>
+> </div>
+> </details>
 
-<b>핵심 성과:</b>
-<ul>
-<li>🏗️ 서버리스/NoSQL 기반 레거시에서 현대적 아키텍처로 재설계</li>
-<li>🔄 멀티테넌시 아키텍처 도입으로 고객별 독립 배포 환경 구축</li>
-<li>⚙️ Github Action, Jenkins, Docker, K8S 기반 CI/CD 파이프라인 구축</li>
-</ul>
+---
 
-<details>
-<summary><b>주요 역할 및 도전 과제 (클릭하여 펼치기)</b></summary>
+> ### 📌 CSIOS (카시아 속초 호텔 통합관리 시스템) 구축 (2023.09 - 2024.05)
+> `React` `TypeScript` `Spring` `JPA` `RabbitMQ` `Redis` `Docker`  
+> **팀 구성:** 백엔드 2명, 풀스택 2명, 프론트 2명, APP 1명, 기획자 1명
+>
+> **핵심 성과:**
+> - 📦 분산된 코어 로직을 멀티모듈, Git 서브레파지토리로 통합하여 재사용성 극대화
+> - 🔐 JPA @Convert 기능을 활용한 DB 개인정보 암복호화 구현
+> - 🚀 Spring Boot 2.4.x에서 2.7.x로 마이그레이션 성공
+>
+> <details>
+> <summary><b>주요 역할 및 해결 과제 (클릭하여 펼치기)</b></summary>
+>
+> <p style="margin-bottom: 12px;"><b style="color: #333;">🔄 풀스택 개발 주도:</b> 8인 팀 중 풀스택 개발 및 CI/CD, 인프라 담당</p>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">📦 코드 통합 및 관리:</b></p>
+> <ul>
+> <li>여러 서버에 분산된 코어 로직을 식별하고 중복 코드 문제점 발견</li>
+> <li>멀티모듈 아키텍처와 Git 서브레파지토리로 재구성하여 코드 재사용성 및 유지보수성 개선</li>
+> </ul>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">🔄 통신 아키텍처 설계:</b></p>
+> <ul>
+> <li>HTTP 기반 동기 통신의 문제점(장애 전파, 높은 결합도)을 인식하고 개선 방향 제시</li>
+> <li>OAuth 서버 중심의 JWT 토큰 인증 체계로 보안 강화</li>
+> <li>RabbitMQ 기반 이벤트 주도 아키텍처를 도입하여 시스템 안정성 향상</li>
+> </ul>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">🏗️ 아키텍처 설계 및 구현:</b><br>
+> MSA 기반 6개 서버 구성 환경 설계 및 구현</p>
+> <ul>
+> <li>Account Management Server: 사용자 계정 및 권한 관리</li>
+> <li>Authorization Server: 인증 및 토큰 관리 전담</li>
+> <li>Batch Server: 예약 업무 및 주기적 작업 처리</li>
+> <li>Contents Management Server: 호텔 콘텐츠 및 상품 관리</li>
+> <li>Member Management Server: 호텔 회원 정보 관리</li>
+> <li>Interface Server: 외부 시스템 연동 전담</li>
+> </ul>
+>
+> <p><b>기술적 도전 및 학습:</b></p>
+> <ul>
+> <li>멀티모듈 아키텍처 설계와 모듈 간 의존성 관리 방법 습득</li>
+> <li>Spring Boot 버전 마이그레이션 과정에서 변경된 API와 의존성 충돌 해결</li>
+> <li>메시지 기반 비동기 아키텍처의 장단점과 구현 패턴 학습</li>
+> </ul>
+> </details>
 
-<p><b>아키텍처 설계 주도:</b> 주니어지만 시스템 아키텍처 설계를 적극적으로 주도하고 기술 스택 의사결정 과정을 이끔</p>
+---
 
-<p><b>레거시 시스템 문제점 식별:</b></p>
-<ul>
-<li>Node.js, Express, AWS Lambda, DynamoDB 기반 시스템의 유지보수 어려움 분석</li>
-<li>로깅 시스템 미흡으로 인한 문제 추적 한계 발견</li>
-<li>설계 없이 급하게 개발된 데이터 구조의 복잡성 파악</li>
-</ul>
+> ### 📌 Eliga Order (B2B 카페, 식당 키오스크) 고도화 (2023.05 - 2023.08)
+> `React` `TypeScript` `Electron` `DynamoDB` `AWS Lambda` `NeDB`  
+> **팀 구성:** 키오스크 1명, 앱 1명, 백오피스 1명
+>
+> **핵심 성과:**
+> - 💯 월 3~4회 발생하던 중복결제 이슈 **100% 해결**
+> - 🔄 오프라인 환경에서도 RFID 기반 결제 지원 및 서버 재연결 시 동기화 구현
+>
+> <details>
+> <summary><b>주요 역할 및 해결 과제 (클릭하여 펼치기)</b></summary>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">💳 결제 모듈 문제 분석 및 해결:</b></p>
+> <ul>
+> <li>중복결제 발생 원인을 결제 프로세스의 동시성 제어 부재로 식별</li>
+> <li>결제 프로세스에 로직적 Lock 체크를 구현하여 중복 트랜잭션 방지</li>
+> </ul>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">🔧 트러블슈팅 주도:</b></p>
+> <ul>
+> <li>C++ 작성 Van 연동 모듈에 상세 로그 추가하여 문제 식별</li>
+> <li>로그 분석을 통해 네트워크 지연 시 결제 상태 추적 불가 문제 발견</li>
+> </ul>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">💻 오프라인 결제 시스템 설계:</b></p>
+> <ul>
+> <li>NeDB를 활용한 키오스크 로컬 주문기록 저장소 설계 및 개발</li>
+> <li>네트워크 재연결 시 서버와 자동 동기화 메커니즘 구현</li>
+> </ul>
+>
+> <p><b>기술적 도전 및 학습:</b></p>
+> <ul>
+> <li>결제 시스템의 동시성 제어 및 장애 대응 패턴 습득</li>
+> <li>온/오프라인 데이터 동기화 전략 및 개발</li>
+> <li>Electron 애플리케이션 아키텍처 개선 및 성능 최적화 경험</li>
+> </ul>
+> </details>
 
-<p><b>기술 스택 선택 및 이유:</b></p>
-<ul>
-<li><b>Java & Spring Boot:</b> 풍부한 생태계와 개발자 수급 용이성, 견고한 엔터프라이즈 기능 지원을 위해 선택</li>
-<li><b>PostgreSQL:</b> NoSQL에서 RDB로 전환하여 데이터 무결성 강화 및 개발자 친화적 환경 제공</li>
-<li><b>Docker:</b> 환경 일관성 보장 및 12시간 이내 On-premise 배포 요구사항 충족 가능성</li>
-<li><b>Kubernetes:</b> 서비스 이중화, 무중단 배포, 멀티테넌시 지원, 중앙집중식 로깅 환경 구축을 위해 도입</li>
-<li><b>Redis:</b> 세션 관리 및 캐싱으로 NoSQL→RDB 전환 과정에서의 성능 최적화를 위해 활용</li>
-<li><b>NCloud:</b> AWS 대비 비용 효율성과 국내 서비스 특성상 지원 용이성 고려</li>
-</ul>
+---
 
-<p><b>설계 및 구현:</b></p>
-<ul>
-<li>ERD 설계부터 전체 시스템 아키텍처 구성까지 전 과정 주도적 참여</li>
-<li>멀티테넌시 아키텍처 설계로 고객사별 독립 환경 제공하는 시스템 구축</li>
-<li>Docker 컨테이너화 및 K8S 배포 파이프라인 설계 및 구현</li>
-<li>중앙화된 로깅 시스템 구축으로 문제 추적 용이성 확보</li>
-</ul>
+> ### 📌 KT All In Safety 고도화 (2023.04 - 2023.05)
+> `Vue` `Spring` `Mybatis`  
+> **팀 구성:** 프론트 2명, 백엔드 3명
+>
+> **핵심 성과:**
+> - 🔐 프론트-백엔드 통신간 민감정보(로그인시 비밀번호 등) RSA 암호화 구현
+> - 🔑 KT LDAP 연동 로그인 구현으로 기업 내부 인증 시스템과의 원활한 통합
+>
+> <details>
+> <summary><b>주요 역할 및 해결 과제 (클릭하여 펼치기)</b></summary>
+>
+> <p style="margin-bottom: 12px;"><b style="color: #333;">🔒 보안 취약점 식별 및 개선:</b> 민감정보 평문 전송의 위험성을 인식하고 RSA 암호화 도입</p>
+> <p style="margin-bottom: 12px;"><b style="color: #333;">🔑 인증 시스템 설계:</b> 기업 LDAP 기반 인증 체계와 애플리케이션 연동 아키텍처 설계</p>
+> <p style="margin-bottom: 12px;"><b style="color: #333;">📚 기술적 도전 및 학습:</b> 비대칭 암호화 알고리즘의 실무 적용 및 엔터프라이즈 인증 시스템 통합 경험</p>
+> </details>
 
-<p><b>기술적 도전 및 성장:</b></p>
-<ul>
-<li>서버리스에서 컨테이너 기반 아키텍처로 전환 경험</li>
-<li>분산 시스템 설계 원칙과 멀티테넌시 아키텍처 구현 역량 습득</li>
-<li>주니어 개발자로서 전체 아키텍처 설계 경험을 통한 기술적 시야 확장</li>
-</ul>
-</details>
-</div>
+---
 
-<div style="border-left: 4px solid #2196F3; padding-left: 15px; margin-bottom: 20px;">
-<h4>📌 CSIOS (카시아 속초 호텔 통합관리 시스템) 구축 (2023.09 - 2024.05)</h4>
-<p><code>React</code> <code>TypeScript</code> <code>Spring</code> <code>JPA</code> <code>RabbitMQ</code> <code>Redis</code> <code>Docker</code><br>
-<b>팀 구성:</b> 백엔드 2명, 풀스택 2명, 프론트 2명, APP 1명, 기획자 1명</p>
-
-<b>핵심 성과:</b>
-<ul>
-<li>📦 분산된 코어 로직을 멀티모듈, Git 서브레파지토리로 통합하여 재사용성 극대화</li>
-<li>🔐 JPA @Convert 기능을 활용한 DB 개인정보 암복호화 구현</li>
-<li>🚀 Spring Boot 2.4.x에서 2.7.x로 마이그레이션 성공</li>
-</ul>
-
-<details>
-<summary><b>주요 역할 및 해결 과제 (클릭하여 펼치기)</b></summary>
-
-<p><b>풀스택 개발 주도:</b> 8인 팀 중 풀스택 개발 및 CI/CD, 인프라 담당</p>
-
-<p><b>코드 통합 및 관리:</b></p>
-<ul>
-<li>여러 서버에 분산된 코어 로직을 식별하고 중복 코드 문제점 발견</li>
-<li>멀티모듈 아키텍처와 Git 서브레파지토리로 재구성하여 코드 재사용성 및 유지보수성 개선</li>
-</ul>
-
-<p><b>통신 아키텍처 설계:</b></p>
-<ul>
-<li>HTTP 기반 동기 통신의 문제점(장애 전파, 높은 결합도)을 인식하고 개선 방향 제시</li>
-<li>OAuth 서버 중심의 JWT 토큰 인증 체계로 보안 강화</li>
-<li>RabbitMQ 기반 이벤트 주도 아키텍처를 도입하여 시스템 안정성 향상</li>
-</ul>
-
-<p><b>아키텍처 설계 및 구현:</b><br>
-MSA 기반 6개 서버 구성 환경 설계 및 구현</p>
-<ul>
-<li>Account Management Server: 사용자 계정 및 권한 관리</li>
-<li>Authorization Server: 인증 및 토큰 관리 전담</li>
-<li>Batch Server: 예약 업무 및 주기적 작업 처리</li>
-<li>Contents Management Server: 호텔 콘텐츠 및 상품 관리</li>
-<li>Member Management Server: 호텔 회원 정보 관리</li>
-<li>Interface Server: 외부 시스템 연동 전담</li>
-</ul>
-
-<p><b>기술적 도전 및 학습:</b></p>
-<ul>
-<li>멀티모듈 아키텍처 설계와 모듈 간 의존성 관리 방법 습득</li>
-<li>Spring Boot 버전 마이그레이션 과정에서 변경된 API와 의존성 충돌 해결</li>
-<li>메시지 기반 비동기 아키텍처의 장단점과 구현 패턴 학습</li>
-</ul>
-</details>
-</div>
-
-<div style="border-left: 4px solid #2196F3; padding-left: 15px; margin-bottom: 20px;">
-<h4>📌 Eliga Order (B2B 카페, 식당 키오스크) 고도화 (2023.05 - 2023.08)</h4>
-<p><code>React</code> <code>TypeScript</code> <code>Electron</code> <code>DynamoDB</code> <code>AWS Lambda</code> <code>NeDB</code><br>
-<b>팀 구성:</b> 키오스크 1명, 앱 1명, 백오피스 1명</p>
-
-<b>핵심 성과:</b>
-<ul>
-<li>💯 월 3~4회 발생하던 중복결제 이슈 <b>100% 해결</b></li>
-<li>🔄 오프라인 환경에서도 RFID 기반 결제 지원 및 서버 재연결 시 동기화 구현</li>
-</ul>
-
-<details>
-<summary><b>주요 역할 및 해결 과제 (클릭하여 펼치기)</b></summary>
-
-<p><b>결제 모듈 문제 분석 및 해결:</b></p>
-<ul>
-<li>중복결제 발생 원인을 결제 프로세스의 동시성 제어 부재로 식별</li>
-<li>결제 프로세스에 로직적 Lock 체크를 구현하여 중복 트랜잭션 방지</li>
-</ul>
-
-<p><b>트러블슈팅 주도:</b></p>
-<ul>
-<li>C++ 작성 Van 연동 모듈에 상세 로그 추가하여 문제 식별</li>
-<li>로그 분석을 통해 네트워크 지연 시 결제 상태 추적 불가 문제 발견</li>
-</ul>
-
-<p><b>오프라인 결제 시스템 설계:</b></p>
-<ul>
-<li>NeDB를 활용한 키오스크 로컬 주문기록 저장소 설계 및 개발</li>
-<li>네트워크 재연결 시 서버와 자동 동기화 메커니즘 구현</li>
-</ul>
-
-<p><b>기술적 도전 및 학습:</b></p>
-<ul>
-<li>결제 시스템의 동시성 제어 및 장애 대응 패턴 습득</li>
-<li>온/오프라인 데이터 동기화 전략 및 개발</li>
-<li>Electron 애플리케이션 아키텍처 개선 및 성능 최적화 경험</li>
-</ul>
-</details>
-</div>
-
-<div style="border-left: 4px solid #2196F3; padding-left: 15px; margin-bottom: 20px;">
-<h4>📌 KT All In Safety 고도화 (2023.04 - 2023.05)</h4>
-<p><code>Vue</code> <code>Spring</code> <code>Mybatis</code><br>
-<b>팀 구성:</b> 프론트 2명, 백엔드 3명</p>
-
-<b>핵심 성과:</b>
-<ul>
-<li>🔐 프론트-백엔드 통신간 민감정보(로그인시 비밀번호 등) RSA 암호화 구현</li>
-<li>🔑 KT LDAP 연동 로그인 구현으로 기업 내부 인증 시스템과의 원활한 통합</li>
-</ul>
-
-<details>
-<summary><b>주요 역할 및 해결 과제 (클릭하여 펼치기)</b></summary>
-
-<p><b>보안 취약점 식별 및 개선:</b> 민감정보 평문 전송의 위험성을 인식하고 RSA 암호화 도입</p>
-<p><b>인증 시스템 설계:</b> 기업 LDAP 기반 인증 체계와 애플리케이션 연동 아키텍처 설계</p>
-<p><b>기술적 도전 및 학습:</b> 비대칭 암호화 알고리즘의 실무 적용 및 엔터프라이즈 인증 시스템 통합 경험</p>
-</details>
-</div>
-
-<div style="border-left: 4px solid #2196F3; padding-left: 15px; margin-bottom: 20px;">
-<h4>📌 KT ITMS 고도화 (2022.10 - 2023.03)</h4>
-<p><code>Spring</code> <code>Mybatis</code> <code>Oracle</code> <code>JSP</code><br>
-<b>팀 구성:</b> 풀스택 개발자 4명</p>
-
-<b>핵심 성과:</b>
-<ul>
-<li>📊 10초 이상 소요되던 대형 쿼리 실행 시간을 <b>1초 이내로 단축</b> (90% 이상 개선)</li>
-<li>🔄 서블릿 기반 레거시 시스템을 Spring 프레임워크로 성공적 마이그레이션</li>
-<li>🔗 KT사내 업무 통합문서함과 API 연동 개발로 업무 효율성 증대</li>
-</ul>
-
-<details>
-<summary><b>주요 역할 및 해결 과제 (클릭하여 펼치기)</b></summary>
-
-<p><b>성능 병목 분석 및 해결:</b></p>
-<ul>
-<li>1000줄 이상 대형 쿼리의 실행 지연(10초+) 문제 분석</li>
-<li>단순 쿼리 최적화(Union → Join 변환)로 초기 개선 시도</li>
-<li>업무 도메인 심층 분석을 통해 승인 프로세스의 직급별 처리 로직을 이해</li>
-<li>비즈니스 로직과 데이터 액세스 계층 분리 설계로 쿼리 분해 및 Java 코드와 결합</li>
-</ul>
-
-<p><b>기술적 도전 및 학습:</b></p>
-<ul>
-<li>복잡한 레거시 쿼리 분석 및 최적화 방법론 습득</li>
-<li>비즈니스 로직과 데이터 액세스 계층 분리를 통한 성능 개선 설계 패턴</li>
-<li>레거시 시스템 점진적 현대화 프로세스 경험</li>
-</ul>
-</details>
-</div>
+> ### 📌 KT ITMS 고도화 (2022.10 - 2023.03)
+> `Spring` `Mybatis` `Oracle` `JSP`  
+> **팀 구성:** 풀스택 개발자 4명
+>
+> **핵심 성과:**
+> - 📊 10초 이상 소요되던 대형 쿼리 실행 시간을 **1초 이내로 단축** (90% 이상 개선)
+> - 🔄 서블릿 기반 레거시 시스템을 Spring 프레임워크로 성공적 마이그레이션
+> - 🔗 KT사내 업무 통합문서함과 API 연동 개발로 업무 효율성 증대
+>
+> <details>
+> <summary><b>주요 역할 및 해결 과제 (클릭하여 펼치기)</b></summary>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">⚡ 성능 병목 분석 및 해결:</b></p>
+> <ul>
+> <li>1000줄 이상 대형 쿼리의 실행 지연(10초+) 문제 분석</li>
+> <li>단순 쿼리 최적화(Union → Join 변환)로 초기 개선 시도</li>
+> <li>업무 도메인 심층 분석을 통해 승인 프로세스의 직급별 처리 로직을 이해</li>
+> <li>비즈니스 로직과 데이터 액세스 계층 분리 설계로 쿼리 분해 및 Java 코드와 결합</li>
+> </ul>
+>
+> <p><b>기술적 도전 및 학습:</b></p>
+> <ul>
+> <li>복잡한 레거시 쿼리 분석 및 최적화 방법론 습득</li>
+> <li>비즈니스 로직과 데이터 액세스 계층 분리를 통한 성능 개선 설계 패턴</li>
+> <li>레거시 시스템 점진적 현대화 프로세스 경험</li>
+> </ul>
+> </details>
 
 ---
 
 ## 🔍 개인 프로젝트 및 오픈소스 기여
 
-<div style="border-left: 4px solid #9C27B0; padding-left: 15px; margin-bottom: 20px;">
-<h3><a href="https://github.com/IDontHaveBrain/AutoClassification">AutoClassification</a></h3>
-<p><code>Python</code> <code>Flask</code> <code>Kotlin</code> <code>Spring Boot</code> <code>React</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>Redis</code> <code>Docker</code></p>
+> ### [AutoClassification](https://github.com/IDontHaveBrain/AutoClassification)
+> `Python` `Flask` `Kotlin` `Spring Boot` `React` `TypeScript` `PostgreSQL` `Redis` `Docker`
+>
+> **OpenAI API와 YOLOv8을 활용한 자동 이미지 분류 및 모델 훈련 시스템**
+>
+> <table>
+>   <tr>
+>     <td><b>🏗️ 멀티모듈 아키텍처</b><br><small>AiServer, UserServer, Frontend</small></td>
+>     <td><b>⚡ 비동기 처리</b><br><small>이벤트 기반 작업 처리</small></td>
+>     <td><b>🔒 보안 설계</b><br><small>OAuth2 및 JWT 인증</small></td>
+>   </tr>
+> </table>
+>
+> <details style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f8f8f8;">
+> <summary style="cursor: pointer; font-weight: bold; color: #0366d6;"><b>🔍 기술 스택 선택 이유 및 구현 세부사항 (클릭하여 펼치기)</b></summary>
+> <div style="margin-top: 10px; padding-left: 15px; border-left: 3px solid #0366d6;">
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">🐍 AiServer (Python, Flask):</b></p>
+> <ul>
+> <li>머신러닝/딥러닝 생태계에 최적화된 Python 선택</li>
+> <li>경량 웹 프레임워크로 Flask 활용하여 API 엔드포인트 구현</li>
+> <li>OpenAI API를 활용한 이미지 자동 라벨링</li>
+> <li>YOLOv8 모델 훈련 파이프라인 구축</li>
+> </ul>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">☕ UserServer (Kotlin, Spring Boot):</b></p>
+> <ul>
+> <li>JVM 생태계의 안정성과 Kotlin의 현대적 문법 조합 선택</li>
+> <li>사용자 관리 및 OAuth2 인증 시스템 설계로 보안 강화</li>
+> <li>PostgreSQL의 관계형 데이터 모델을 활용한 사용자 데이터 관리</li>
+> <li>Redis를 활용한 분산 세션 관리 및 캐싱으로 성능 최적화</li>
+> </ul>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">🌐 Frontend (React, TypeScript):</b></p>
+> <ul>
+> <li>컴포넌트 기반 구조와 상태 관리의 용이성을 위해 React 선택</li>
+> <li>TypeScript를 도입하여 코드 안정성 및 개발 생산성 향상</li>
+> <li>Redux를 활용한 체계적인 상태 관리로 실시간 모델 훈련 상태 추적 기능 구현</li>
+> </ul>
+>
+> <p style="margin-bottom: 8px; margin-top: 15px;"><b style="color: #333;">💡 기술적 도전 및 해결:</b></p>
+> <ul>
+> <li>다양한 언어로 작성된 서비스 간 통신 아키텍처 설계 및 최적화</li>
+> <li>대용량 이미지 처리를 위한 비동기 워크플로우 최적화</li>
+> <li>Docker를 활용한 개발 및 테스트 환경 표준화로 일관된 결과 보장</li>
+> </ul>
+> </details>
 
-<p><b>OpenAI API와 YOLOv8을 활용한 자동 이미지 분류 및 모델 훈련 시스템</b></p>
+---
 
-<table>
-  <tr>
-    <td><b>🏗️ 멀티모듈 아키텍처</b><br><small>AiServer, UserServer, Frontend</small></td>
-    <td><b>⚡ 비동기 처리</b><br><small>이벤트 기반 작업 처리</small></td>
-    <td><b>🔒 보안 설계</b><br><small>OAuth2 및 JWT 인증</small></td>
-  </tr>
-</table>
-
-<details>
-<summary><b>기술 스택 선택 이유 및 구현 세부사항 (클릭하여 펼치기)</b></summary>
-
-<p><b>AiServer (Python, Flask):</b></p>
-<ul>
-<li>머신러닝/딥러닝 생태계에 최적화된 Python 선택</li>
-<li>경량 웹 프레임워크로 Flask 활용하여 API 엔드포인트 구현</li>
-<li>OpenAI API를 활용한 이미지 자동 라벨링</li>
-<li>YOLOv8 모델 훈련 파이프라인 구축</li>
-</ul>
-
-<p><b>UserServer (Kotlin, Spring Boot):</b></p>
-<ul>
-<li>JVM 생태계의 안정성과 Kotlin의 현대적 문법 조합 선택</li>
-<li>사용자 관리 및 OAuth2 인증 시스템 설계로 보안 강화</li>
-<li>PostgreSQL의 관계형 데이터 모델을 활용한 사용자 데이터 관리</li>
-<li>Redis를 활용한 분산 세션 관리 및 캐싱으로 성능 최적화</li>
-</ul>
-
-<p><b>Frontend (React, TypeScript):</b></p>
-<ul>
-<li>컴포넌트 기반 구조와 상태 관리의 용이성을 위해 React 선택</li>
-<li>TypeScript를 도입하여 코드 안정성 및 개발 생산성 향상</li>
-<li>Redux를 활용한 체계적인 상태 관리로 실시간 모델 훈련 상태 추적 기능 구현</li>
-</ul>
-
-<p><b>기술적 도전 및 해결:</b></p>
-<ul>
-<li>다양한 언어로 작성된 서비스 간 통신 아키텍처 설계 및 최적화</li>
-<li>대용량 이미지 처리를 위한 비동기 워크플로우 최적화</li>
-<li>Docker를 활용한 개발 및 테스트 환경 표준화로 일관된 결과 보장</li>
-</ul>
-</details>
-</div>
-
-<div style="border-left: 4px solid #9C27B0; padding-left: 15px; margin-bottom: 20px;">
-<h3>오픈소스 기여</h3>
-
-<p><b>🔧 tree-sitter-language-pack:</b></p>
-<ul>
-<li>Windows 환경에서의 설치 및 작동 문제 해결을 위한 PR 기여</li>
-<li>경로 처리 정규식 패턴 개선 및 MSVC 컴파일러 옵션 추가</li>
-<li>Windows 테스트를 GitHub Actions 워크플로우에 추가하여 크로스 플랫폼 호환성 보장</li>
-</ul>
-
-<p><b>🔧 multilspy:</b></p>
-<ul>
-<li>Windows 환경에서 TypeScriptLanguageServer 사용 시 발생하는 'No module named pwd' 오류 해결 PR 기여</li>
-<li>Unix 시스템에서만 사용 가능한 pwd 모듈을 Windows에서는 조건부로 임포트하도록 개선</li>
-</ul>
-
-<p>오픈소스 프로젝트 기여를 통해 다양한 개발 환경에 대한 이해와 협업 경험을 쌓고 있습니다.</p>
-</div>
+> ### 오픈소스 기여
+>
+> **🔧 tree-sitter-language-pack:**
+> - Windows 환경에서의 설치 및 작동 문제 해결을 위한 PR 기여
+> - 경로 처리 정규식 패턴 개선 및 MSVC 컴파일러 옵션 추가
+> - Windows 테스트를 GitHub Actions 워크플로우에 추가하여 크로스 플랫폼 호환성 보장
+>
+> **🔧 multilspy:**
+> - Windows 환경에서 TypeScriptLanguageServer 사용 시 발생하는 'No module named pwd' 오류 해결 PR 기여
+> - Unix 시스템에서만 사용 가능한 pwd 모듈을 Windows에서는 조건부로 임포트하도록 개선
+>
+> 오픈소스 프로젝트 기여를 통해 다양한 개발 환경에 대한 이해와 협업 경험을 쌓고 있습니다.
 
 ---
 
