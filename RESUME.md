@@ -585,7 +585,7 @@ MSA 기반 6개 서버 구성 환경 설계 및 구현</p>
 </div>
 
 <div style="border-left: 4px solid #9C27B0; padding-left: 15px; margin-bottom: 20px;">
-<h3>오픈소스 기여</h3>
+<h3>🌱오픈소스 기여</h3>
 
 <p><b>🔧 tree-sitter-language-pack:</b></p>
 <ul>
