@@ -109,6 +109,11 @@ details p {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
+  
+  /* 인쇄 시 버튼 숨기기 */
+  .print-controls {
+    display: none !important;
+  }
 }
 </style>
 
@@ -143,6 +148,7 @@ window.addEventListener('afterprint', function() {
 // 'PDF로 저장하기' 버튼 추가
 document.addEventListener('DOMContentLoaded', function() {
   const btnContainer = document.createElement('div');
+  btnContainer.className = 'print-controls'; // 인쇄 시 숨기기 위한 클래스 추가
   btnContainer.style.textAlign = 'center';
   btnContainer.style.margin = '20px 0';
   
