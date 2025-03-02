@@ -116,7 +116,7 @@
 *2022.10 - 2024.09*
 
 #### 🚀 Eliga Order(B2B 카페, 식당 키오스크 솔루션) 차세대 (2024.03 - 2024.09)
-> `Java` `Spring Boot` `PostgreSQL` `Docker` `K8S` `Redis`
+> `Java` `Spring Boot` `PostgreSQL` `Docker` `K8S` `Redis`  
 > **팀 구성:** 백엔드 4명, 데이터 마이그레이션 1명, 프론트 3명, 앱 3명
 
 - **담당 역할:**
@@ -144,7 +144,7 @@
     - NCloud: AWS 대비 인프라 비용 절감
 
 #### 📌 CSIOS (카시아 속초 호텔 통합관리 시스템) 구축 (2023.09 - 2024.05)
-> `React` `TypeScript` `Spring` `JPA` `RabbitMQ` `Redis` `Docker`
+> `React` `TypeScript` `Spring` `JPA` `RabbitMQ` `Redis` `Docker`  
 > **팀 구성:** 백엔드 2명, 풀스택 2명, 프론트 2명, APP 1명, 기획자 1명
 
 - **담당 역할:**
@@ -174,7 +174,7 @@
     - MSA 기반 6개 서버(Account, Authorization, Batch, Contents, Member, Interface) 구성 환경 성공적 구축
 
 #### 📌 Eliga Order (B2B 카페, 식당 키오스크) 고도화 (2023.05 - 2023.08)
-> `React` `TypeScript` `Electron` `DynamoDB` `AWS Lambda` `NeDB`
+> `React` `TypeScript` `Electron` `DynamoDB` `AWS Lambda` `NeDB`  
 > **팀 구성:** 키오스크 1명, 앱 1명, 백오피스 1명
 
 - **담당 역할:**
@@ -196,7 +196,7 @@
     - 오프라인 환경에서도 RFID 기반 결제 지원 및 서버 재연결 시 동기화 구현으로 사용자 경험 개선
 
 #### 📌 KT All In Safety 고도화 (2023.04 - 2023.05)
-> `Vue` `Spring` `Mybatis`
+> `Vue` `Spring` `Mybatis`  
 > **팀 구성:** 프론트 2명, 백엔드 3명
 
 - **담당 역할:**
@@ -214,7 +214,7 @@
     - 기업 내부 인증 시스템과의 원활한 통합
 
 #### 📌 KT ITMS 고도화 (2022.10 - 2023.03)
-> `Spring` `Mybatis` `Oracle` `JSP`
+> `Spring` `Mybatis` `Oracle` `JSP`  
 > **팀 구성:** 풀스택 개발자 4명
 
 - **담당 역할:**
