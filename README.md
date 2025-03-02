@@ -1,4 +1,4 @@
-# 조남준 &nbsp;|&nbsp; 백엔드 개발자 (아키텍트 지향)
+# 조남준 &nbsp;|&nbsp; 백엔드 개발자
 
 <div align="center">
 
