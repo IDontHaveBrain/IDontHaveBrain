@@ -112,6 +112,100 @@ details p {
 }
 </style>
 
+<script>
+// 인쇄 시작 전에 모든 details 요소를 자동으로 펼치는 함수
+window.addEventListener('beforeprint', function() {
+  // 모든 details 요소를 찾아서 open 속성 추가
+  const allDetails = document.querySelectorAll('details');
+  allDetails.forEach(function(details) {
+    // 현재 상태 저장 (나중에 복원하기 위해)
+    details.dataset.wasOpen = details.hasAttribute('open');
+    // 강제로 펼치기
+    details.setAttribute('open', 'true');
+  });
+});
+
+// 인쇄 완료 후 원래 상태로 복원 (선택적)
+window.addEventListener('afterprint', function() {
+  // 모든 details 요소를 찾아서 원래 상태로 복원
+  const allDetails = document.querySelectorAll('details');
+  allDetails.forEach(function(details) {
+    // 원래 닫혀 있었으면 다시 닫기
+    if (details.dataset.wasOpen === 'false' || !details.dataset.wasOpen) {
+      details.removeAttribute('open');
+    }
+    // 임시 데이터 속성 제거
+    delete details.dataset.wasOpen;
+  });
+});
+
+// 페이지 로드 시 details 요소를 직접 열어볼 수 있도록 
+// 'PDF로 저장하기' 버튼 추가
+document.addEventListener('DOMContentLoaded', function() {
+  const btnContainer = document.createElement('div');
+  btnContainer.style.textAlign = 'center';
+  btnContainer.style.margin = '20px 0';
+  
+  const expandBtn = document.createElement('button');
+  expandBtn.textContent = '모든 섹션 펼치기';
+  expandBtn.style.padding = '8px 15px';
+  expandBtn.style.marginRight = '10px';
+  expandBtn.style.backgroundColor = '#3f51b5';
+  expandBtn.style.color = 'white';
+  expandBtn.style.border = 'none';
+  expandBtn.style.borderRadius = '4px';
+  expandBtn.style.cursor = 'pointer';
+  
+  const collapseBtn = document.createElement('button');
+  collapseBtn.textContent = '모든 섹션 접기';
+  collapseBtn.style.padding = '8px 15px';
+  collapseBtn.style.marginRight = '10px';
+  collapseBtn.style.backgroundColor = '#9e9e9e';
+  collapseBtn.style.color = 'white';
+  collapseBtn.style.border = 'none';
+  collapseBtn.style.borderRadius = '4px';
+  collapseBtn.style.cursor = 'pointer';
+  
+  const printBtn = document.createElement('button');
+  printBtn.textContent = 'PDF로 저장하기';
+  printBtn.style.padding = '8px 15px';
+  printBtn.style.backgroundColor = '#4CAF50';
+  printBtn.style.color = 'white';
+  printBtn.style.border = 'none';
+  printBtn.style.borderRadius = '4px';
+  printBtn.style.cursor = 'pointer';
+  
+  // 이벤트 리스너 추가
+  expandBtn.addEventListener('click', function() {
+    document.querySelectorAll('details').forEach(function(detail) {
+      detail.setAttribute('open', 'true');
+    });
+  });
+  
+  collapseBtn.addEventListener('click', function() {
+    document.querySelectorAll('details').forEach(function(detail) {
+      detail.removeAttribute('open');
+    });
+  });
+  
+  printBtn.addEventListener('click', function() {
+    window.print();
+  });
+  
+  btnContainer.appendChild(expandBtn);
+  btnContainer.appendChild(collapseBtn);
+  btnContainer.appendChild(printBtn);
+  
+  // 제목 바로 아래에 버튼 추가
+  const titleElement = document.querySelector('h1') || document.querySelector('#조남준-백엔드-개발자');
+  if (titleElement && titleElement.parentNode) {
+    titleElement.parentNode.insertBefore(btnContainer, titleElement.nextSibling);
+  } else {
+    document.body.insertBefore(btnContainer, document.body.firstChild);
+  }
+});
+</script>
+
 [![Email](https://img.shields.io/badge/Email-jonamjun.dev%40gmail.com-blue?style=for-the-badge&logo=gmail)](mailto:jonamjun.dev@gmail.com)
 [![Phone](https://img.shields.io/badge/Phone-%2B821051264634-green?style=for-the-badge&logo=whatsapp)](tel:+821051264634)
 [![GitHub](https://img.shields.io/badge/GitHub-IDontHaveBrain-181717?style=for-the-badge&logo=github)](https://github.com/IDontHaveBrain)
